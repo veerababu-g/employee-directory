@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="/src/main/resources/static/css/style.css" />
+</head>
+<body>
+<div class="title-card">
+  <h1>Employee Directory</h1>
+  <input type="text" id="searchInput" placeholder="Search by name or email..." />
+
+</div>
+
+  <button id="addBtn" class="add-button">+ Add Employee</button>
+
+  <!-- Form -->
+  <div id="form-container" class="hidden">
+    <form id="employeeForm">
+      <input type="hidden" id="empId" />
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <label for="email">EMAIL ID</label>
+      <input type="email" id="email" placeholder="Email" required />
+      <label for="department">DEPARTMENT</label>
+      <input type="text" id="department" placeholder="Department" required />
+      <label for="role">ROLE</label>
+      <input type="text" id="role" placeholder="Role" required />
+      <button type="submit" class="save-button">Save</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Employee List -->
+  <div id="employee-list"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Employee Directory  All Right </p>
+  </footer>
+
+  <script src="/src/main/resources/static/js/app.js"></script>
+</body>
+</html>
